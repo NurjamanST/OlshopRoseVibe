@@ -37,7 +37,7 @@
             <div class="mx-[10%] text-center mb-6 text-[#949292] alike-regular">Masuk dengan email
             </div>
             <div class="mx-[10%]">
-                <form action="" method="post" class="alike-regular">
+                <form action="<?= base_url("Auth/Signin_prosess")?>" method="POST" class="alike-regular">
                     <div class="grid gap-2 mb-6">
                         <div class="mb-1 relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -50,7 +50,7 @@
                             </div>
                             <input type="email" id="email"
                                 class="bg-[#FBF6F6] border border-[#FF77A2] text-gray-900 text-xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                                placeholder="Email">
+                                placeholder="Email" name="email">
                         </div>
                         <div class="mb-4 relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -64,7 +64,7 @@
                             </div>
                             <input type="password" id="password"
                                 class="bg-[#FBF6F6] border border-[#FF77A2] text-gray-900 text-xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                                placeholder="Password">
+                                placeholder="Password" name="password">
                         </div>
                         <div class="text-right text-[#FF77A2]">
                             <a href="<?php echo base_url('forgot'); ?>">Forgot your password?</a>

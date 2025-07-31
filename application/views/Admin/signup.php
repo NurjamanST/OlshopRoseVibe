@@ -32,11 +32,11 @@
         <div class="px-[5%] py-[3%] bg-[#FBF6F6] mx-[5%] my-[5%]">
             <div class="text-3xl text-[#B66878] aladin-regular w-[100%] mb-8 text-center">CreateAccount</div>
             <div class="mx-[10%]">
-                <form action="" method="post" class="alike-regular">
+                <form action="<?= base_url("Auth/Signup_prosess")?>" method="POST" class="alike-regular">
                     <div class="grid gap-1 mb-6">
                         <div class="mb-1 relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-[26px] h-[26px] text-gray-800 dark:text-white" aria-hidden="true"
+                                <svg class="w-[26px] h-[26px] text-gray-800" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                     viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-width="1"
@@ -45,11 +45,11 @@
                             </div>
                             <input type="text" id="nama"
                                 class="bg-[#FBF6F6] border border-[#FF77A2] text-gray-900 text-xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                                placeholder="Nama">
+                                placeholder="Nama" name="username" required>
                         </div>
                         <div class="mb-1 relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-[21px] h-[21px] text-gray-800 dark:text-white" aria-hidden="true"
+                                <svg class="w-[21px] h-[21px] text-gray-800" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                     viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-width="1"
@@ -58,11 +58,11 @@
                             </div>
                             <input type="email" id="email"
                                 class="bg-[#FBF6F6] border border-[#FF77A2] text-gray-900 text-xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                                placeholder="Email">
+                                placeholder="Email" name="email" required>
                         </div>
                         <div class="mb-9 relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                <svg class="w-6 h-6 text-gray-800" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                     viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -72,7 +72,7 @@
                             </div>
                             <input type="password" id="password"
                                 class="bg-[#FBF6F6] border border-[#FF77A2] text-gray-900 text-xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-                                placeholder="Password">
+                                placeholder="Password" name="password" required>
                         </div>
                         <div class="text-center mb-3">
                             <button type="submit"
